@@ -21,7 +21,7 @@
               <div class="collapse" id="category">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/ui-features/buttons.html">Add category</a>
+                    <a class="nav-link" href="pages/ui-features/Add-category">Add categoAry</a>
                   </li>
                 
                   <li class="nav-item">
@@ -70,14 +70,6 @@
             </li>
 
 
-
-
-
-
-
-
-
-
               <li class="nav-item">
               <a class="nav-link" data-bs-toggle="collapse" href="#customer" aria-expanded="false" aria-controls="ui-basic">
                 <span class="menu-title">Customer</span>
@@ -113,9 +105,6 @@
                 </ul>
               </div>
             </li>
-
-
-   
 
 
           </ul>

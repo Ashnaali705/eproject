@@ -27,11 +27,11 @@
               <div class="collapse" id="category">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/ui-features/Add-category.php">Add category</a>
+                    <a class="nav-link" href="Add-category.php">Add category</a>
                   </li>
                   
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/ui-features/typography.php">View category</a>
+                    <a class="nav-link" href="View-category.php">View category</a>
                   </li>
                 </ul>
               </div>
@@ -47,11 +47,11 @@
               <div class="collapse" id="product">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/ui-features/buttons.php">Add product</a>
+                    <a class="nav-link" href="Add-product.php">Add product</a>
                   </li>
                   
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/ui-features/typography.php">View product</a>
+                    <a class="nav-link" href="View-product.php">View product</a>
                   </li>
                 </ul>
               </div>
@@ -65,11 +65,11 @@
               <div class="collapse" id="employee">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/ui-features/button.php">Add employee</a>
+                    <a class="nav-link" href="Add-employee.php">Add employee</a>
                   </li>
                   
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/ui-features/typography.php">View employee</a>
+                    <a class="nav-link" href="View-employee.php">View employee</a>
                   </li>
                 </ul>
               </div>
@@ -83,11 +83,11 @@
               <div class="collapse" id="customer">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/ui-features/buttons.php">Add customer</a>
+                    <a class="nav-link" href="Add-customer.php">Add customer</a>
                   </li>
                   
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/ui-features/typography.php">View customer</a>
+                    <a class="nav-link" href="View-customer.php">View customer</a>
                   </li>
                 </ul>
               </div>
@@ -101,11 +101,11 @@
               <div class="collapse" id="orders">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/ui-features/buttons.html">Add orders</a>
+                    <a class="nav-link" href="Add-orders.php">Add orders</a>
                   </li>
                   
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/ui-features/typography.html">View orders</a>
+                    <a class="nav-link" href="View-orders.php">View orders</a>
                   </li>
                 </ul>
               </div>
@@ -343,6 +343,10 @@
                 </div>
               </div>
             </div>
+          
+          
+          
+          
           </div>
           <!-- content-wrapper ends -->
           </div>

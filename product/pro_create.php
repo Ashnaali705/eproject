@@ -1,43 +1,39 @@
-<!-- <?php
-include 'auth.php';
+<
+
+ 
+<?php
 include 'dbconn.php';
 
-if (isset($_POST['submit'])) {
-    // Generate 7-digit unique product ID
-    do {
-        $product_id = rand(1000000, 9999999);
-        $check = mysqli_query($conn, "SELECT * FROM product WHERE product_id='$product_id'");
-    } while (mysqli_num_rows($check) > 0);
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $product_id = rand(1000000, 9999999); // 7-digit ID
+    $name = $_POST['name'];
+    $price = $_POST['price'];
+    $desc = $_POST['description'];
+    $category = $_POST['category'];
 
-    $name = mysqli_real_escape_string($conn, $_POST['name']);
-    $category = mysqli_real_escape_string($conn, $_POST['category']);
-    $price = floatval($_POST['price']);
-    $description = mysqli_real_escape_string($conn, $_POST['description']);
-
-    $query = "INSERT INTO product (product_id, name, category, price, description)
-              VALUES ('$product_id', '$name', '$category', '$price', '$description')";
-
-    if (mysqli_query($conn, $query)) {
-        header("Location: pro_view.php");
-        exit;
-    } else {
-        $error = "Error inserting product: " . mysqli_error($conn);
-    }
+    $sql = "INSERT INTO product (product_id, name, price, description, category) 
+            VALUES ('$product_id', '$name', '$price', '$desc', '$category')";
+    mysqli_query($conn, $sql);
+    header("Location: pro_view.php");
 }
 ?>
 
-<h2>Add New Product</h2>
-
 <form method="post">
-    Name: <input type="text" name="name" required><br/>
-    Category: <input type="text" name="category" required><br/>
-    Price: <input type="number" step="0.01" name="price" required><br/>
-    image:<input type ="file" name="image" required><br/>
-    Description: <textarea name="description"></textarea><br/>
-
-    <input type="submit" name="submit" value="Add Product">
+    Name: <input type="text" name="name"><br>
+    Price: <input type="text" name="price"><br>
+    Description: <textarea name="description"></textarea><br>
+    Category: 
+    <select name="category">
+        <option>Greeting Cards</option>
+        <option>Gift Articles</option>
+        <option>Dolls</option>
+        <option>Stationery</option>
+        <option>Hand Bags</option>
+        <option>Wallets</option>
+        <option>Beauty Products</option>
+        <option>Art Supplies</option>
+    </select><br>
+    <input type="submit" value="Add Product">
 </form>
 
-<?php if(isset($error)) echo $error; ?>
 
- -->

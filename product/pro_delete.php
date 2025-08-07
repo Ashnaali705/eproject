@@ -1,5 +1,5 @@
-<!-- <?php
-include 'auth.php';
+ <?php
+
 include 'dbconn.php';
 
 if (!isset($_GET['id'])) {
@@ -16,4 +16,4 @@ if (mysqli_query($conn, $query)) {
 } else {
     echo "Error deleting product: " . mysqli_error($conn);
 }
-?> -->
+?> 
